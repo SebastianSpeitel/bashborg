@@ -11,7 +11,7 @@ Create borg backups configurable via a ssh-like config.
 
 ## Configuration
 
-The config file is located at `~/.config/borg/backups` by default.
+The config is read from `~/.config/borg/backups` by default.
 
 ### Examples
 
@@ -19,7 +19,6 @@ The config file is located at `~/.config/borg/backups` by default.
 # Sets a global default compression
 Compression auto,zstd,12
 
-# The name is just used for logging
 Backup local
     Repo ~/backup
     Passphrase hunter2
@@ -31,7 +30,7 @@ Backup remote
 ```
 
 ```bash
-# Setting the repo globally allows configuring a single backup
+# Setting the repo globally allows configuring a single backup named default
 Repo backup:~/backup
 ```
 

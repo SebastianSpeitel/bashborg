@@ -7,7 +7,7 @@ global_ignorefile=".borgignore"
 
 function create(){
     
-    local name=${current_name:-"$global_name"}
+    local name=${current_name:-"default"}
     unset current_name
     local repo=${current_repo:-"$global_repo"}
     unset current_repo
